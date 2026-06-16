@@ -85,7 +85,8 @@
   --navbar-height: 4rem;
   --section-py: var(--space-20);
   --grid-size: 72px;
-  --aurora-overflow: -12%;
+  --grid-tile-size: var(--grid-size) var(--grid-size);
+  --aurora-overflow-inset: -12%;
   --hero-aurora-overflow-x: -8%;
   --motion-slow: 36s;
   --motion-medium: 30s;
@@ -198,13 +199,13 @@ body::after {
 }
 
 body::before {
-  inset: var(--aurora-overflow);
+  inset: var(--aurora-overflow-inset);
   z-index: -2;
   background: var(--page-aurora);
   filter: blur(40px);
   opacity: .95;
   transform-origin: center;
-  will-change: transform;
+  will-change: transform, opacity;
   animation: auroraFloat var(--motion-slow) ease-in-out infinite alternate;
 }
 
@@ -214,7 +215,7 @@ body::after {
     linear-gradient(var(--page-grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--page-grid-color) 1px, transparent 1px),
     linear-gradient(180deg, var(--page-grid-fade), transparent 24%, transparent 76%, var(--page-grid-fade));
-  background-size: var(--grid-size) var(--grid-size), var(--grid-size) var(--grid-size), 100% 100%;
+  background-size: var(--grid-tile-size), var(--grid-tile-size), 100% 100%;
   opacity: .45;
 }
 
@@ -264,11 +265,12 @@ ul, ol { list-style: none; }
 
 .section--hero::before {
   z-index: 0;
-  inset: var(--aurora-overflow) var(--hero-aurora-overflow-x);
+  inset: var(--aurora-overflow-inset) var(--hero-aurora-overflow-x);
   background: var(--hero-glow);
   filter: blur(18px);
   opacity: .98;
   transform-origin: center;
+  will-change: transform, opacity;
   animation: heroGlowDrift var(--motion-medium) ease-in-out infinite alternate;
 }
 
@@ -460,6 +462,7 @@ ul, ol { list-style: none; }
   background: var(--hero-halo);
   filter: blur(12px);
   z-index: -1;
+  will-change: transform, opacity;
   animation: heroHaloPulse var(--motion-soft) ease-in-out infinite;
 }
 .hero__image-ring {
@@ -1492,6 +1495,7 @@ ul, ol { list-style: none; }
   .hero__image-wrap::before {
     animation: none;
     transform: none;
+    filter: none;
   }
 }
 
