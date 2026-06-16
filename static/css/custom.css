@@ -130,6 +130,7 @@
   --hero-portrait-shadow:
     0 20px 45px rgba(15,23,42,.16),
     0 6px 18px rgba(37,99,235,.14);
+  --hero-portrait-position: center 22%;
 
   /* Section ambient glows & hero transition */
   --section-bloom:
@@ -205,6 +206,7 @@
   --hero-portrait-shadow:
     0 24px 48px rgba(2,6,23,.42),
     0 10px 24px rgba(34,211,238,.12);
+  --hero-portrait-position: center 22%;
 
   /* Section ambient glows & hero transition (dark overrides) */
   --section-bloom:
@@ -573,7 +575,7 @@ ul, ol { list-style: none; }
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: var(--hero-portrait-position);
 }
 .hero__image-fallback {
   display: none;
@@ -1626,19 +1628,18 @@ ul, ol { list-style: none; }
   body::before,
   .section--hero::before,
   .section--hero::after,
-  .hero__image-wrap::before,
+  .hero__image-wrap::before {
+    animation: none;
+    transform: none;
+    filter: none;
+    background: none;
+    opacity: 0;
+  }
+
   .hero__image-ring {
     animation: none;
     transform: none;
     filter: none;
-  }
-
-  body::before,
-  .section--hero::before,
-  .section--hero::after,
-  .hero__image-wrap::before {
-    background: none;
-    opacity: 0;
   }
 }
 
