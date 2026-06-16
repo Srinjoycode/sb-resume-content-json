@@ -8,6 +8,12 @@ name: Remove PR Preview
 on:
   pull_request:
     types: [closed]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Pull request number whose preview should be removed"
+        required: true
+        type: number
 
 permissions:
   contents: write       # push deletion to gh-pages branch
@@ -19,8 +25,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      PR_NUMBER: ${{ github.event.pull_request.number }}
-      DEPLOY_SUBDIR: pr-preview/pr-${{ github.event.pull_request.number }}
+      PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr_number }}
+      DEPLOY_SUBDIR: pr-preview/pr-${{ github.event.pull_request.number || inputs.pr_number }}
 
     steps:
       - name: Checkout gh-pages branch
@@ -47,7 +53,7 @@ jobs:
           script: |
             const owner  = context.repo.owner;
             const repo   = context.repo.repo;
-            const prNum  = context.payload.pull_request.number;
+            const prNum  = context.payload.pull_request?.number ?? Number('${{ env.PR_NUMBER }}');
 
             const { data: comments } = await github.rest.issues.listComments({
               owner, repo, issue_number: prNum,
