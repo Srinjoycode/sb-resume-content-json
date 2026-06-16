@@ -85,7 +85,6 @@
   --navbar-height: 4rem;
   --section-py: var(--space-20);
   --grid-size: 72px;
-  --grid-tile-size: var(--grid-size) var(--grid-size);
   --aurora-overflow-inset: -12%;
   --hero-aurora-overflow-x: -8%;
   --motion-slow: 36s;
@@ -202,7 +201,7 @@ body::before {
   inset: var(--aurora-overflow-inset);
   z-index: -2;
   background: var(--page-aurora);
-  filter: blur(40px);
+  filter: blur(30px);
   opacity: .95;
   transform-origin: center;
   will-change: transform, opacity;
@@ -215,7 +214,7 @@ body::after {
     linear-gradient(var(--page-grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--page-grid-color) 1px, transparent 1px),
     linear-gradient(180deg, var(--page-grid-fade), transparent 24%, transparent 76%, var(--page-grid-fade));
-  background-size: var(--grid-tile-size), var(--grid-tile-size), 100% 100%;
+  background-size: var(--grid-size) var(--grid-size), var(--grid-size) var(--grid-size), 100% 100%;
   opacity: .45;
 }
 
@@ -1496,6 +1495,8 @@ ul, ol { list-style: none; }
     animation: none;
     transform: none;
     filter: none;
+    background: none;
+    opacity: 0;
   }
 }
 
