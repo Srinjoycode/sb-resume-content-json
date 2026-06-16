@@ -1628,6 +1628,8 @@ ul, ol { list-style: none; }
   body::before,
   .section--hero::before,
   .section--hero::after,
+  .section--hero--glacier::before,
+  .section--hero--glacier::after,
   .hero__image-wrap::before {
     animation: none;
     transform: none;
