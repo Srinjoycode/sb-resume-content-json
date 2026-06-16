@@ -1,0 +1,134 @@
+# Hugo Academic Website Configuration
+# This configuration file shows how to integrate the resume JSON data files
+# with a Hugo academic template
+
+# Site Configuration
+baseURL: "https://yourdomain.com/"
+title: "Srinjoy Bhuiya - Academic Portfolio"
+theme: "academic"  # or your chosen Hugo academic theme
+languageCode: "en-us"
+darkMode: true
+
+# Content Directories
+contentDir: "content"
+staticDir: "static"
+dataDir: "data"
+layoutsDir: "layouts"
+
+# Output Formats
+outputs:
+  home:
+    - HTML
+    - JSON
+
+# Markup Configuration
+markdown:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Hugo Module Configuration (if using themes as modules)
+module:
+  imports:
+    - path: "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap5"
+
+# Data Files Configuration
+# The following data files are used to populate site content:
+# - data/profile.json: Personal information and social links
+# - data/education.json: Educational background
+# - data/experience.json: Professional experience and internships
+# - data/publications.json: Research papers and publications
+# - data/awards.json: Honors, scholarships, and awards
+# - data/skills.json: Technical and professional skills
+# - data/volunteer.json: Volunteer experience and leadership roles
+
+# Content Sections
+# Each section corresponds to a JSON data file:
+sections:
+  about:
+    dataFile: "data/profile.json"
+  experience:
+    dataFile: "data/experience.json"
+  education:
+    dataFile: "data/education.json"
+  publications:
+    dataFile: "data/publications.json"
+  awards:
+    dataFile: "data/awards.json"
+  skills:
+    dataFile: "data/skills.json"
+  volunteer:
+    dataFile: "data/volunteer.json"
+
+# Example Hugo Params Configuration
+params:
+  # Profile Information
+  name: "Srinjoy Bhuiya"
+  role: "Master's Student in Computing Science | AI & ML Researcher"
+  bio: "Master's student in Computing Science at the University of Alberta with a strong focus on machine learning, computer vision, and generative AI."
+  
+  # Contact Information
+  email: "srinjoybhuiya@gmail.com"
+  phone: "+1-587-937-5679"
+  location: "Edmonton, Canada"
+  
+  # Social Links
+  social:
+    - icon: "fab fa-linkedin"
+      icon_pack: "fab"
+      link: "https://www.linkedin.com/in/srinjoy-bhuiya/"
+    - icon: "fab fa-github"
+      icon_pack: "fab"
+      link: "https://github.com/Srinjoycode"
+    - icon: "fas fa-envelope"
+      icon_pack: "fas"
+      link: "mailto:srinjoybhuiya@gmail.com"
+  
+  # Theme Settings
+  theme: "forest"
+  day_night: true
+  font: "native"
+  font_size: "L"
+  
+  # Site Features
+  show_social: true
+  show_profile_image: true
+  reading_time: true
+  comment_count: false
+  breadcrumb: true
+  
+  # Analytics (optional)
+  analytics:
+    google_analytics_id: "" # Add your Google Analytics ID
+
+# Menu Configuration
+menu:
+  main:
+    - name: Home
+      url: "/"
+      weight: 1
+    - name: About
+      url: "/#about"
+      weight: 2
+    - name: Experience
+      url: "/#experience"
+      weight: 3
+    - name: Education
+      url: "/#education"
+      weight: 4
+    - name: Publications
+      url: "/#publications"
+      weight: 5
+    - name: Skills
+      url: "/#skills"
+      weight: 6
+    - name: Blog
+      url: "/post"
+      weight: 7
+    - name: Contact
+      url: "/#contact"
+      weight: 8
+
+# Build Configuration
+build:
+  useResourceCacheWhen: "fallback"

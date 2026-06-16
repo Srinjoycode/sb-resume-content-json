@@ -1,0 +1,145 @@
+{
+  "experience": [
+    {
+      "id": "synapsis-medical",
+      "organization": "Synapsis Medical Technologies",
+      "location": "Edmonton, Canada",
+      "roles": [
+        {
+          "title": "Machine Learning Research Scientist (Part-Time)",
+          "startDate": "2025-05",
+          "endDate": "2025-09"
+        },
+        {
+          "title": "Research Intern (MITACS Accelerate Fellowship)",
+          "startDate": "2024-05",
+          "endDate": "2025-04"
+        }
+      ],
+      "description": "Involved in the design and development of intelligent medical document processing systems",
+      "achievements": [
+        {
+          "title": "Medical OCR and Document Triage System",
+          "description": "Designed and developed a Medical OCR and document triage system using quantized Small Language Models (SLMs) for medical document parsing and understanding, significantly speeding up medical administrative workflows"
+        },
+        {
+          "title": "Diffusion-Based Anomaly Detection",
+          "description": "Developed a novel diffusion-based anomaly detection method to classify cardiovascular pressure signals, ensuring high-quality data selection for downstream machine learning tasks"
+        }
+      ]
+    },
+    {
+      "id": "isi-kolkata",
+      "organization": "Indian Statistical Institute (Center for Soft Computing Research)",
+      "location": "Kolkata, India",
+      "roles": [
+        {
+          "title": "Research Intern (Part-Time)",
+          "startDate": "2023-01",
+          "endDate": "2023-09"
+        }
+      ],
+      "supervisor": "Dr. Kuntal Ghosh",
+      "description": "Developed novel deep learning models for satellite image analysis",
+      "achievements": [
+        {
+          "title": "Edge Detection on Ultra-high Resolution Images",
+          "description": "Developing a novel deep-learning model for understanding the rate of forest cover reduction in the Kaziranga Forest National Park, Assam, India using multi-sensor satellite data and advanced edge detection techniques"
+        }
+      ]
+    },
+    {
+      "id": "tmu-toronto",
+      "organization": "Laboratory of Translational Medicine - Toronto Metropolitan University",
+      "location": "Ontario, Canada",
+      "roles": [
+        {
+          "title": "Research Intern (Full-time, MITACS Globalink Research Program)",
+          "startDate": "2022-07",
+          "endDate": "2022-10"
+        }
+      ],
+      "supervisor": "Dr. Elodie Lugez",
+      "description": "Developed medical image segmentation and tracking algorithms for volumetric ultrasound",
+      "achievements": [
+        {
+          "title": "Catheter Segmentation",
+          "description": "Developed a novel real-time segmentation model for catheter tracking on volumetric ultrasound images using PyTorch with high accuracy and performance"
+        },
+        {
+          "title": "Catheter Tracking in 3D Ultrasound Images",
+          "description": "Developed a 3D RANSAC algorithm with polynomial curve fitting regression to generate catheter paths in ultrasound images of the prostate for improved surgical guidance"
+        }
+      ]
+    },
+    {
+      "id": "berkeley-future-work",
+      "organization": "Future of Work Lab - University of California, Berkeley",
+      "location": "Remote",
+      "roles": [
+        {
+          "title": "Research Analyst Intern (Full-time, Contractual)",
+          "startDate": "2022-06",
+          "endDate": "2022-07"
+        }
+      ],
+      "description": "Conducted data preprocessing and statistical analysis for socioeconomic research",
+      "achievements": [
+        {
+          "title": "Data Preprocessing",
+          "description": "Conducted thorough digitization of physical census data for further analysis and integration into research database"
+        },
+        {
+          "title": "Research Data Analysis",
+          "description": "Applied Principal Component Analysis (PCA) and various statistical methods to analyze underlying relationships between literacy rates and employability across different demographics"
+        }
+      ]
+    },
+    {
+      "id": "ajantrik-agv",
+      "organization": "Ajantrik Private Limited",
+      "location": "Kolkata, India",
+      "roles": [
+        {
+          "title": "Technical Research Associate (Full-time)",
+          "startDate": "2021-12",
+          "endDate": "2022-06"
+        }
+      ],
+      "description": "Developed autonomous guided vehicle (AGV) perception and navigation systems",
+      "achievements": [
+        {
+          "title": "Collision Avoidance Systems",
+          "description": "Developed collision avoidance perception software for warehouse-based Autonomous Guided Vehicles (AGVs) with real-time object detection and obstacle avoidance"
+        },
+        {
+          "title": "Real-Time Path-finding System",
+          "description": "Developed approximation-based path-finding algorithms for warehouse AGVs which resulted in 30% reduction in order collection time, improving warehouse efficiency"
+        }
+      ]
+    },
+    {
+      "id": "future-ready-talent",
+      "organization": "Future Ready Talent Program (In association with AICTE and Microsoft)",
+      "location": "Remote",
+      "roles": [
+        {
+          "title": "Virtual Internship (Part-time)",
+          "startDate": "2021-09",
+          "endDate": "2021-12"
+        }
+      ],
+      "description": "Cloud computing and biomedical computer vision training program",
+      "achievements": [
+        {
+          "title": "Learning Microsoft Azure",
+          "description": "Learned in-demand Azure cloud & security skills aligned to industry needs and best practices"
+        },
+        {
+          "title": "Cloud Based Biomedical Computer Vision Project",
+          "description": "Developed a Cloud-Computing based project deployed on Azure to detect the presence of glaucoma using smartphone-based pictures of the eye with good accuracy"
+        }
+      ]
+    }
+  ]
+}

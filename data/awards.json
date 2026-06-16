@@ -1,0 +1,37 @@
+{
+  "awards": [
+    {
+      "id": "ualberta-scholarship",
+      "name": "Graduate Recruitment Scholarship",
+      "organization": "University of Alberta",
+      "location": "Edmonton, Canada",
+      "awardDate": "2023-09",
+      "endDate": "2024-09",
+      "type": "Scholarship",
+      "description": "Awarded to high-achieving graduate students with significant research potential at the University of Alberta.",
+      "significance": "Recognizes exceptional academic performance and research capability in graduate programs",
+      "highlights": [
+        "Competitive award for graduate students",
+        "Recognizes research potential",
+        "One year scholarship duration"
+      ]
+    },
+    {
+      "id": "govt-india-scholarship",
+      "name": "Central Scholarship for College and University Students",
+      "organization": "Government of India",
+      "location": "India",
+      "awardDate": "2019-04",
+      "endDate": "2023-03",
+      "type": "Merit-Based Scholarship",
+      "description": "Awarded to the top 80,000 students nationwide for exemplary performance in Higher Secondary examinations.",
+      "significance": "Prestigious national scholarship recognizing top academic performers",
+      "highlights": [
+        "Nationwide merit-based selection",
+        "Top 80,000 students selected across India",
+        "Based on Higher Secondary exam performance",
+        "Four year scholarship covering undergraduate studies"
+      ]
+    }
+  ]
+}

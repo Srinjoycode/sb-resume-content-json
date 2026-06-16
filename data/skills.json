@@ -1,0 +1,83 @@
+{
+  "skills": [
+    {
+      "category": "Generative AI & LLMs",
+      "skills": [
+        "Transformers",
+        "Retrieval-Augmented Generation (RAG)",
+        "LangChain",
+        "Fine-tuning (LoRA, PEFT)",
+        "Prompt Engineering",
+        "Vector Databases",
+        "RLHF (Reinforcement Learning from Human Feedback)"
+      ]
+    },
+    {
+      "category": "Deep Learning",
+      "skills": [
+        "TensorFlow",
+        "PyTorch",
+        "Hugging Face",
+        "Computer Vision",
+        "Vision Transformers (ViT)",
+        "YOLO",
+        "Convolutional Neural Networks (CNNs)",
+        "Generative Adversarial Networks (GANs)",
+        "Autoencoders",
+        "Attention Mechanisms"
+      ]
+    },
+    {
+      "category": "Machine Learning",
+      "skills": [
+        "Scikit-learn",
+        "XGBoost",
+        "LightGBM",
+        "Statistical Modeling",
+        "Natural Language Toolkit (NLTK)",
+        "Anomaly Detection",
+        "Time Series Analysis"
+      ]
+    },
+    {
+      "category": "Data & Visualization",
+      "skills": [
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Plotly",
+        "Tensorboard",
+        "Weights & Biases (W&B)",
+        "Data preprocessing and cleaning"
+      ]
+    },
+    {
+      "category": "Cloud & MLOps",
+      "skills": [
+        "Amazon Web Services (AWS)",
+        "Google Cloud Platform (GCP)",
+        "Microsoft Azure",
+        "Docker",
+        "Kubernetes",
+        "CI/CD for Machine Learning",
+        "Model deployment and serving"
+      ]
+    },
+    {
+      "category": "Software Development",
+      "skills": [
+        "Python",
+        "C",
+        "C++",
+        "Java",
+        "Linux",
+        "Git",
+        "REST APIs",
+        "FastAPI",
+        "Flask",
+        "Software engineering best practices"
+      ]
+    }
+  ]
+}

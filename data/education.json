@@ -1,0 +1,63 @@
+{
+  "education": [
+    {
+      "id": "ualberta-masters",
+      "institution": "University of Alberta",
+      "degree": "Master's in Computing Science (Thesis)",
+      "field": "Computing Science",
+      "location": "Edmonton, Canada",
+      "startDate": "2023-09",
+      "endDate": "2026-05",
+      "gpa": "3.9/4",
+      "supervisor": {
+        "name": "Dr. Nilanjan Ray",
+        "url": "https://webdocs.cs.ualberta.ca/~nray1/"
+      },
+      "laboratory": {
+        "name": "VISUAL Laboratory",
+        "url": "https://ualbertavisual.ca/"
+      },
+      "courses": [
+        "Reinforcement Learning 1 & 2",
+        "ML & the Brain",
+        "Earth Observation AI Applications"
+      ],
+      "teachingAssistant": [
+        {
+          "course": "CMPUT328",
+          "title": "Visual Recognition"
+        },
+        {
+          "course": "CMPUT200",
+          "title": "Ethics of Data Science & AI"
+        }
+      ],
+      "highlights": [
+        "Supervised research in machine learning and computer vision",
+        "Teaching assistant for Visual Recognition and Ethics courses",
+        "Thesis-based program with focus on applied AI research"
+      ]
+    },
+    {
+      "id": "heritage-bachelors",
+      "institution": "Heritage Institute of Technology",
+      "degree": "Bachelor of Technology in Computer Science",
+      "field": "Computer Science",
+      "location": "Kolkata, India",
+      "startDate": "2019-08",
+      "endDate": "2023-05",
+      "gpa": "9.34/10",
+      "courses": [
+        "Analysis of Algorithms",
+        "Pattern Recognition",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Natural Language Processing"
+      ],
+      "highlights": [
+        "Top academic performance with 9.34/10 CGPA",
+        "Strong foundation in AI and machine learning"
+      ]
+    }
+  ]
+}

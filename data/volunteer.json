@@ -1,0 +1,57 @@
+{
+  "volunteer": [
+    {
+      "id": "csgsa-finance",
+      "organization": "Computing Science Graduate Students Association (CSGSA)",
+      "location": "Edmonton, Canada",
+      "position": "Director of Finances",
+      "role": "Executive Member",
+      "startDate": "2023-09",
+      "endDate": "2025-04",
+      "description": "Executive member of the Computing Science Graduate Students Association at the University of Alberta, managing financial operations and supporting graduate student initiatives.",
+      "responsibilities": [
+        "Manage association finances and budgets",
+        "Oversee financial planning and resource allocation",
+        "Support graduate student community events and programs",
+        "Collaborate with executive team on strategic initiatives"
+      ],
+      "impact": "Supported hundreds of graduate students through financial management and community development"
+    },
+    {
+      "id": "dsc-hitk",
+      "organization": "Developer Student Clubs (DSC) - Heritage Institute of Technology",
+      "location": "Kolkata, India",
+      "position": "Technical Lead",
+      "role": "Community Leader",
+      "startDate": "2020-09",
+      "endDate": "2023-09",
+      "description": "Technical leader at Developer Student Clubs at HITK, conducting technical and soft-skills training sessions impacting hundreds of students.",
+      "responsibilities": [
+        "Design and deliver technical training sessions",
+        "Organize workshops on emerging technologies",
+        "Mentor junior developers and students",
+        "Conduct soft-skills training sessions",
+        "Foster collaborative learning community"
+      ],
+      "impact": "Impacted hundreds of students through technical education and leadership development"
+    },
+    {
+      "id": "quiz-club-hitk",
+      "organization": "HITK Quiz Club - Heritage Institute of Technology",
+      "location": "Kolkata, India",
+      "position": "Head Coordinator",
+      "role": "Community Organizer",
+      "startDate": "2021-04",
+      "endDate": "2022-05",
+      "description": "Head coordinator of the HITK Quiz Club, organizing and conducting quizzing events across multiple domains.",
+      "responsibilities": [
+        "Organize technical quizzing sessions",
+        "Plan popular culture and general knowledge quizzes",
+        "Manage quiz club logistics and scheduling",
+        "Engage student community in intellectual competitions",
+        "Promote collaborative learning through quizzing"
+      ],
+      "impact": "Conducted numerous technical, popular culture, and general quizzing sessions for the student community"
+    }
+  ]
+}

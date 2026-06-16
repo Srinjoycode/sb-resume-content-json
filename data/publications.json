@@ -1,0 +1,132 @@
+{
+  "publications": [
+    {
+      "id": "streamflow-2025",
+      "title": "Improving Stream-flow Prediction in Snow-Dominated Regions using Pretrained Fusion Attention Models",
+      "status": "In Progress",
+      "date": "2025-09",
+      "type": "Research Project",
+      "authors": [
+        "Srinjoy Bhuiya",
+        "Dr. Nilanjan Ray"
+      ],
+      "supervisor": "Dr. Nilanjan Ray",
+      "institution": "University of Alberta",
+      "description": "Working under the guidance of Dr Nilanjan Ray at the University of Alberta to develop long-term (seasonal) river water-flow forecasting in data-scarce & snow-dominated river basins using large scale pretraining on a novel attention-fusion architecture along with specialized multi-stage finetuning for the Bow river basin near Calgary.",
+      "researchFocus": [
+        "Seasonal river flow prediction",
+        "Attention-fusion architectures",
+        "Transfer learning and pretraining",
+        "Data-scarce environments"
+      ],
+      "links": {}
+    },
+    {
+      "id": "biomedical-gan-2023",
+      "title": "High-Quality 3D Biomedical Image Generation using Generative Adversarial Networks",
+      "status": "Accepted and Presented",
+      "date": "2023-05",
+      "type": "Peer-Reviewed Conference Paper",
+      "venue": "PREMI 2023",
+      "publication": "Springer Lecture Notes in Computer Science (LNCS)",
+      "authors": [
+        "Srinjoy Bhuiya",
+        "Subhopriyo Sadhukhan",
+        "Suchandra Chakraborty",
+        "Dr. Dinabandhu Bhandari",
+        "Dr. Deba Prasad Mandal"
+      ],
+      "supervisor": "Dr. Dinabandhu Bhandari",
+      "institution": "Heritage Institute of Technology",
+      "dateRange": "Oct 2022 - May 2023",
+      "description": "Created a novel generative model for generating high-resolution 3D medical images for image augmentation, addressing data scarcity in medical imaging applications.",
+      "researchFocus": [
+        "Generative Adversarial Networks (GANs)",
+        "3D medical image synthesis",
+        "Data augmentation for medical imaging",
+        "High-resolution image generation"
+      ],
+      "links": {
+        "doi": "https://link.springer.com/chapter/10.1007/978-3-031-45170-6_50",
+        "title": "Generation of Data for Training Retinal Image Segmentation Models"
+      }
+    },
+    {
+      "id": "catheter-autoencoder-2022",
+      "title": "Using Attention-Based Auto-encoders for Catheter Path Reconstruction in Ultrasound Images",
+      "status": "Accepted",
+      "date": "2022-10",
+      "type": "Peer-Reviewed Conference Paper",
+      "venue": "SPIE Medical Imaging 2023",
+      "authors": [
+        "Srinjoy Bhuiya",
+        "Shreyasi Mandal",
+        "Dr. Elodie Lugez"
+      ],
+      "supervisor": "Dr. Elodie Lugez",
+      "institution": "Toronto Metropolitan University",
+      "dateRange": "Jul 2022 – Oct 2022",
+      "description": "Worked with Dr. Elodie Lugez at Toronto Metropolitan University to create a novel architecture for tracking and localization of catheters in 3D ultrasound images of the prostate.",
+      "researchFocus": [
+        "Attention mechanisms",
+        "Auto-encoders",
+        "Medical image analysis",
+        "Catheter tracking and segmentation",
+        "3D ultrasound imaging"
+      ],
+      "links": {
+        "doi": "https://doi.org/10.1117/12.3003897"
+      }
+    },
+    {
+      "id": "retinal-segmentation-2022",
+      "title": "Retinal Blood Vessel Segmentation from Fundus Images",
+      "status": "Accepted and Presented",
+      "date": "2022-12",
+      "type": "Peer-Reviewed Conference Paper",
+      "venue": "IEEE CALCON 2022",
+      "authors": [
+        "Srinjoy Bhuiya",
+        "Soumik Roy Choudhury",
+        "Geetanjali Aich",
+        "Muskan Maurya",
+        "Dr. Anindya Sen"
+      ],
+      "supervisor": "Dr. Anindya Sen",
+      "institution": "Heritage Institute of Technology",
+      "dateRange": "Apr 2021 – Jul 2021",
+      "description": "Worked with Dr Anindya Sen at Heritage Institute of Technology, Kolkata to create a novel architecture for efficient blood vessel segmentation of colour fundus images.",
+      "researchFocus": [
+        "Medical image segmentation",
+        "Retinal blood vessel analysis",
+        "Fundus image processing",
+        "Deep learning for ophthalmology"
+      ],
+      "links": {
+        "ieee": "https://ieeexplore.ieee.org/abstract/document/10060189"
+      }
+    },
+    {
+      "id": "drivable-segmentation-2021",
+      "title": "Exploring the Effects of Data Augmentation for Drivable Area Segmentation",
+      "status": "Preprint",
+      "date": "2021-11",
+      "type": "arXiv Preprint",
+      "authors": [
+        "Srinjoy Bhuiya",
+        "Ayushman Kumar",
+        "Sankalok Sen"
+      ],
+      "description": "Conducted research dealing with the various weather scenarios that an autonomous vehicle encounters. Proposed a novel data augmentation and driving area segmentation model to achieve real-time detection in various challenging conditions.",
+      "researchFocus": [
+        "Data augmentation techniques",
+        "Autonomous vehicle perception",
+        "Drivable area segmentation",
+        "Robust computer vision under adverse conditions"
+      ],
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2208.03437"
+      }
+    }
+  ]
+}

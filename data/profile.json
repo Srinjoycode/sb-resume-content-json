@@ -1,0 +1,19 @@
+{
+  "name": "Srinjoy Bhuiya",
+  "title": "Master's Student in Computing Science | AI & ML Researcher",
+  "email": "srinjoybhuiya@gmail.com",
+  "phone": "+1-587-937-5679",
+  "location": "Edmonton, Canada",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/srinjoy-bhuiya/",
+    "github": "https://github.com/Srinjoycode"
+  },
+  "bio": "Master's student in Computing Science at the University of Alberta with a strong focus on machine learning, computer vision, and generative AI. Passionate about developing novel deep learning models and applying research to real-world medical and environmental applications.",
+  "researchInterests": [
+    "Generative AI and Large Language Models",
+    "Deep Learning for Computer Vision",
+    "Medical Image Analysis",
+    "Anomaly Detection and Time Series Analysis",
+    "Earth Observation and Environmental AI"
+  ]
+}
