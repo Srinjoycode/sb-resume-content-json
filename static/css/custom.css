@@ -84,6 +84,7 @@
   --container-max: 1100px;
   --navbar-height: 4rem;
   --section-py: var(--space-20);
+  --grid-size: 72px;
 
   /* Background effects */
   --page-shell-gradient:
@@ -191,7 +192,7 @@ body::before {
   inset: -12%;
   z-index: -2;
   background: var(--page-aurora);
-  filter: blur(72px);
+  filter: blur(56px);
   opacity: .95;
   transform-origin: center;
   animation: auroraFloat 28s ease-in-out infinite alternate;
@@ -203,7 +204,7 @@ body::after {
     linear-gradient(var(--page-grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--page-grid-color) 1px, transparent 1px),
     linear-gradient(180deg, var(--page-grid-fade), transparent 24%, transparent 76%, var(--page-grid-fade));
-  background-size: 72px 72px, 72px 72px, 100% 100%;
+  background-size: var(--grid-size) var(--grid-size), var(--grid-size) var(--grid-size), 100% 100%;
   opacity: .45;
 }
 
