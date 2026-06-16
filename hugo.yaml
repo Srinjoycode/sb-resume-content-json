@@ -13,7 +13,8 @@ enableRobotsTXT: true
 enableGitInfo: false
 enableEmoji: true
 hasCJKLanguage: false
-paginate: 6
+pagination:
+  pagerSize: 6
 
 # Taxonomy configuration
 taxonomies:

@@ -29,7 +29,7 @@
         </a>
         {{ end }}
         {{ with site.Params.cvFile }}
-        <a href="{{ . }}" class="btn btn--outline" download>
+        <a href="{{ . | relURL }}" class="btn btn--outline" download>
           <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download CV
         </a>
@@ -53,7 +53,7 @@
     <div class="hero__image-wrap">
       <div class="hero__image-ring">
         <img
-          src="{{ site.Params.profileImage | default "/images/profile.jpg" }}"
+          src="{{ site.Params.profileImage | default "/images/profile.jpg" | relURL }}"
           alt="Profile photo of {{ $profile.name }}"
           class="hero__image"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"

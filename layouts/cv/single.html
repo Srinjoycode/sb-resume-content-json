@@ -25,7 +25,7 @@
       </div>
       <div class="cv__actions no-print">
         {{ with site.Params.cvFile }}
-        <a href="{{ . }}" class="btn btn--primary" download>⬇ Download PDF</a>
+        <a href="{{ . | relURL }}" class="btn btn--primary" download>⬇ Download PDF</a>
         {{ end }}
         <button onclick="window.print()" class="btn btn--outline">🖨 Print CV</button>
       </div>

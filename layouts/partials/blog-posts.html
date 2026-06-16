@@ -46,7 +46,7 @@
       {{ end }}
     </div>
     <div class="section__cta">
-      <a href="/posts/" class="btn btn--outline">View All Posts →</a>
+      <a href="{{ "posts/" | relURL }}" class="btn btn--outline">View All Posts →</a>
     </div>
     {{ else }}
     <p class="section__empty">No posts yet — check back soon!</p>

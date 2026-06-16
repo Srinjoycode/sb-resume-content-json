@@ -3,7 +3,7 @@
   <div class="container navbar__inner">
 
     {{/* Brand / site name */}}
-    <a href="/" class="navbar__brand" aria-label="Home">
+    <a href="{{ site.Home.RelPermalink }}" class="navbar__brand" aria-label="Home">
       {{ $profile.name | default .Site.Title }}
     </a>
 
@@ -17,8 +17,9 @@
     {{/* Navigation links */}}
     <ul class="navbar__menu" id="navMenu" role="list">
       {{ range .Site.Menus.main }}
+      {{- $url := .URL | relURL -}}
       <li class="navbar__item">
-        <a href="{{ .URL }}" class="navbar__link{{ if eq $.RelPermalink .URL }} active{{ end }}">
+        <a href="{{ $url }}" class="navbar__link{{ if eq $.RelPermalink $url }} active{{ end }}">
           {{ .Name }}
         </a>
       </li>
@@ -26,7 +27,7 @@
       {{/* CV download link */}}
       {{ with .Site.Params.cvFile }}
       <li class="navbar__item">
-        <a href="{{ . }}" class="navbar__link navbar__link--btn" download aria-label="Download CV">
+        <a href="{{ . | relURL }}" class="navbar__link navbar__link--btn" download aria-label="Download CV">
           CV ↓
         </a>
       </li>
