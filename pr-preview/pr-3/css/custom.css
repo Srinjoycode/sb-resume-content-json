@@ -13,27 +13,27 @@
   --color-accent:         #7c3aed;
 
   --color-bg:             #ffffff;
-  --color-bg-alt:         #f8fafc;
+  --color-bg-alt:         #edf3fa;
   --color-bg-card:        #ffffff;
   --color-bg-nav:         #1e293b;
-  --color-bg-shell:       #f8fbff;
+  --color-bg-shell:       #e8f1fa;
 
   --color-text:           #1e293b;
   --color-text-muted:     #64748b;
   --color-text-nav:       #f1f5f9;
 
   --color-border:         #e2e8f0;
-  --color-border-card:    #e2e8f0;
+  --color-border-card:    #ccd8e8;
 
   --color-success:        #16a34a;
   --color-info:           #0891b2;
   --color-warning:        #d97706;
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
-  --shadow-md:  0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.06);
-  --shadow-lg:  0 10px 15px rgba(0,0,0,.1),  0 4px 6px rgba(0,0,0,.05);
-  --shadow-hover: 0 8px 24px rgba(37,99,235,.15);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.11), 0 1px 2px rgba(0,0,0,.09);
+  --shadow-md:  0 4px 8px rgba(0,0,0,.10), 0 2px 4px rgba(0,0,0,.08);
+  --shadow-lg:  0 10px 18px rgba(0,0,0,.12), 0 4px 6px rgba(0,0,0,.07);
+  --shadow-hover: 0 8px 24px rgba(37,99,235,.22);
 
   /* Typography */
   --font-sans:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -97,11 +97,11 @@
     radial-gradient(circle at top right, rgba(8,145,178,.07), transparent 30%),
     linear-gradient(180deg, #ffffff 0%, #f8fbff 46%, #f8fafc 100%);
   --page-aurora:
-    radial-gradient(circle at 20% 20%, rgba(37,99,235,.16), transparent 28%),
-    radial-gradient(circle at 80% 15%, rgba(8,145,178,.16), transparent 24%),
-    radial-gradient(circle at 55% 78%, rgba(124,58,237,.12), transparent 26%);
-  --page-grid-color: rgba(148,163,184,.12);
-  --page-grid-fade: rgba(255,255,255,.78);
+    radial-gradient(circle at 20% 20%, rgba(37,99,235,.24), transparent 28%),
+    radial-gradient(circle at 80% 15%, rgba(8,145,178,.22), transparent 24%),
+    radial-gradient(circle at 55% 78%, rgba(124,58,237,.17), transparent 26%);
+  --page-grid-color: rgba(148,163,184,.18);
+  --page-grid-fade: rgba(255,255,255,.65);
   --hero-bg-gradient:
     linear-gradient(135deg, rgba(255,255,255,.82) 0%, rgba(248,250,252,.68) 45%, rgba(219,234,254,.42) 100%);
   --hero-glow:
@@ -112,6 +112,16 @@
     radial-gradient(circle at 78% 38%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.32) 32%, transparent 60%);
   --hero-halo:
     radial-gradient(circle, rgba(37,99,235,.16) 0%, rgba(37,99,235,.06) 45%, transparent 72%);
+
+  /* Section ambient glows & hero transition */
+  --section-bloom:
+    radial-gradient(ellipse at 88% 50%, rgba(37,99,235,.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 12% 60%, rgba(8,145,178,.06) 0%, transparent 50%);
+  --section-alt-bloom:
+    radial-gradient(ellipse at 16% 45%, rgba(37,99,235,.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 84% 55%, rgba(124,58,237,.06) 0%, transparent 50%);
+  --hero-bottom-fade:
+    linear-gradient(to bottom, transparent 60%, var(--color-bg-alt) 100%);
 }
 
 /* ---- 2. Dark Theme ---------------------------------------- */
@@ -159,6 +169,16 @@
     radial-gradient(circle at 76% 36%, rgba(96,165,250,.2) 0%, rgba(96,165,250,.08) 24%, transparent 58%);
   --hero-halo:
     radial-gradient(circle, rgba(96,165,250,.22) 0%, rgba(34,211,238,.08) 44%, transparent 72%);
+
+  /* Section ambient glows & hero transition (dark overrides) */
+  --section-bloom:
+    radial-gradient(ellipse at 88% 50%, rgba(96,165,250,.05) 0%, transparent 55%),
+    radial-gradient(ellipse at 12% 60%, rgba(34,211,238,.04) 0%, transparent 50%);
+  --section-alt-bloom:
+    radial-gradient(ellipse at 16% 45%, rgba(96,165,250,.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 84% 55%, rgba(124,58,237,.05) 0%, transparent 50%);
+  --hero-bottom-fade:
+    linear-gradient(to bottom, transparent 60%, var(--color-bg-alt) 100%);
 }
 
 /* ---- 3. Reset & Base -------------------------------------- */
@@ -239,9 +259,11 @@ ul, ol { list-style: none; }
 
 .section {
   padding-block: var(--section-py);
+  background-image: var(--section-bloom);
 }
 .section--alt {
   background-color: var(--color-bg-alt);
+  background-image: var(--section-alt-bloom);
 }
 .section--hero {
   position: relative;
@@ -250,6 +272,7 @@ ul, ol { list-style: none; }
   overflow: hidden;
   isolation: isolate;
   background:
+    var(--hero-bottom-fade),
     var(--hero-bg-gradient),
     linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
 }
