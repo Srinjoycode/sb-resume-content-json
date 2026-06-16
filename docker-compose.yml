@@ -25,7 +25,7 @@ services:
     # port your previous hello-world container was using.
     # -------------------------------------------------------
     ports:
-      - "8080:80"
+      - "8888:80"
 
     # Environment (optional overrides)
     environment:
